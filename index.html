@@ -8,13 +8,152 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- Header -->
+    <header>
+      <div>
+        <!-- Logo -->
+        <div class="logo">
+          <img src="https://picsum.photos/200" alt="Logo Icon" width="100%" />
+          <h1>Naufal A.Y</h1>
+        </div>
 
-    <header></header>
+        <!-- NavBar -->
+        <nav>
+          <a href="#hero">Home</a>
+          <a href="#projects">Our Projects</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-    <main></main>
+    <!-- Main Content -->
+    <main>
+      <section id="hero">
+        <div>
+          <h2>
+            Hello <span id="display-name"></span>, Welcome to My Portfolio
+          </h2>
+          <p>Discover my projects and portfolio.</p>
+        </div>
+      </section>
 
+      <section id="projects">
+        <h2>Our Projects</h2>
+        <div class="project-list">
+          <div class="project-card">
+            <h3>Catatan Keuangan Rumah Tangga</h3>
+            <p>
+              This application was developed while I was doing my internship
+              (PKL), and it was uploaded to the Apple Store.
+            </p>
+            <a
+              href="https://apps.apple.com/id/app/catatan-keuangan-rumah-tangga/id6743597255"
+              target="_blank"
+              >See App</a
+            >
+          </div>
+          <div class="project-card">
+            <h3>Whatsapp Bot (MotzBot)</h3>
+            <p>
+              This WhatsApp bot was created to make it easier to generate
+              WhatsApp stickers, download TikTok videos, create QR codes, and
+              more
+            </p>
+            <a href="https://wa.me/62895378062828?text=Hi" target="_blank"
+              >See Bot</a
+            >
+          </div>
+          <div class="project-card">
+            <h3>Flappy Bird game</h3>
+            <p>
+              Flappy Bird is a simple tap-to-fly game where you guide a small
+              bird through pipes and try to beat your best score.
+            </p>
+            <a href="https://github.com/soudayonee/FlappyBird" target="_blank"
+              >See Game</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-list">
+          <a
+            href="https://apps.apple.com/id/app/catatan-keuangan-rumah-tangga/id6743597255"
+            target="_blank"
+          >
+            <div class="portfolio-item">
+              <img
+                src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9b/a6/50/9ba650c4-0c19-e401-7531-24c629997a7d/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200ia-75.webp"
+                alt="Portfolio 1"
+              />
+              <h4>Portfolio App 1</h4>
+              <p>
+                This application was developed while I was doing my internship
+                (PKL), and it was uploaded to the Apple Store.
+              </p>
+            </div>
+          </a>
+          <div class="portfolio-item">
+            <a
+              href="https://apps.apple.com/id/app/fiksi-novel-story/id6743686681"
+              target="_blank"
+            >
+              <img
+                src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c8/4f/d8/c84fd85b-7251-66e2-ef51-9052ed7ae889/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200ia-75.webp"
+                alt="Portfolio 2"
+              />
+              <h4>Portfolio App 2</h4>
+              <p>
+                I participated in the development of this application mainly
+                during the testing and debugging phase before it was published.
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+            readonly
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
     <footer></footer>
 
     <script type="module" src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
